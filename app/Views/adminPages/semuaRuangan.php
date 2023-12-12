@@ -24,7 +24,7 @@
 
 	<!-- SIDEBAR -->
 	<section id="sidebar">
-		<a href="#" class="brand textdecoration-none">
+		<a href="<?= base_url('dashboard'); ?>" class="brand textdecoration-none">
 			<div class="nav-logo">
 				<img src="../assets/img/icon.png">
 				<span>Admin Page</span>
@@ -32,13 +32,13 @@
 		</a>
 		<ul class="side-menu top">
 			<li>
-				<a href="dashboard.html" class="textdecoration-none">
+				<a href="<?= base_url('dashboard'); ?>" class="textdecoration-none">
 					<i class='bx bxs-dashboard'></i>
 					<span class="text">Dashboard</span>
 				</a>
 			</li>
 			<li class="active">
-				<a href="semuaRuangan.html" class="textdecoration-none">
+				<a href="<?= base_url("semuaRuangan"); ?>" class="textdecoration-none">
 					<i class='bx bi bi-building'></i>
 					<span class="text">Semua Ruangan</span>
 				</a>
@@ -68,7 +68,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="daftarAccount.html" class="textdecoration-none">
+				<a href="<?= base_url("daftarAccount"); ?>" class="textdecoration-none">
 					<i class="bx bi bi-person-circle"></i>
 					<span class="text">Daftar Acount</span>
 				</a>
@@ -76,7 +76,7 @@
 		</ul>
 		<ul class="side-menu" class="textdecoration-none">
 			<li>
-				<a href="../index.html" class="logout textdecoration-none">
+				<a href="<?= base_url('logout'); ?>" class="logout textdecoration-none">
 					<i class='bx bxs-log-out-circle'></i>
 					<span class="text">Logout</span>
 				</a>

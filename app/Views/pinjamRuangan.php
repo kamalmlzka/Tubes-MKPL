@@ -47,7 +47,7 @@ $user_status = session()->get('user_status');
     <div id="navapp" class="fixed-top height-em-4">
       <div class="container-fluid container-xl d-flex align-items-center justify-content-between fixed-top py-3">
 
-        <a href="index.html" class="logo d-flex align-items-center">
+        <a href="<?= base_url("/"); ?>" class="logo d-flex align-items-center">
           <h1 id="navTitle">Monitoring Kelas<span class="dotlogo-primary" id="spanNavTitle">.</span>GKU</h1>
         </a>
 
@@ -55,13 +55,54 @@ $user_status = session()->get('user_status');
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a href="index.html" id="navMenu-1">Home</a></li>
-            <li><a href="daftarRuangan.html" id="navMenu-3" class="active">Daftar Ruangan</a></li>
-            <li><a href="notifikasi.html" id="navMenu-4">Notifikasi</a></li>
-            <li><a href="profile.html" id="navMenu-5">profile</a></li>
-            <li><a href="login.html" id="navMenu-0">
-                <div id="navLogin" class="nav-login-menu">Login</div>
-              </a></li>
+            <?php
+            if ($user_id == null) {
+            } else {
+            ?>
+              <li><a href="<?= base_url("/"); ?>" id="navMenu-1">Home</a></li>
+              <li><a href="<?= base_url("daftarRuangan"); ?>" id="navMenu-3" class="active">Daftar Ruangan</a></li>
+              <li><a href="<?= base_url("notifikasi"); ?>" id="navMenu-4">Notifikasi</a></li>
+              <li><a href="<?= base_url("profile"); ?>" id="navMenu-5">profile</a></li>
+            <?php
+            }
+            ?>
+            <!-- <li><a href="about.html" id="navMenu-2">About</a></li>
+            <li><a href="blog.html" id="navMenu-5">Blog</a></li>
+            <li class="dropdown"><a href="#" id="navMenu-6"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <ul>
+                <li><a href="#">Dropdown 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html" id="navMenu-7">Contact</a></li> -->
+            <?php
+            if ($user_id == null) {
+            ?>
+              <li><a href="<?= base_url("login"); ?>" id="navMenu-0">
+                  <div id="navLogin" class="nav-login-menu">Login</div>
+                </a>
+              </li>
+            <?php
+            } else {
+            ?>
+              <li><a href="<?= base_url("logout"); ?>" id="navMenu-0">
+                  <div id="navLogin" class="nav-login-menu">LogOut</div>
+                </a>
+              </li>
+            <?php
+            }
+            ?>
           </ul>
         </nav>
         <!-- .navbar -->

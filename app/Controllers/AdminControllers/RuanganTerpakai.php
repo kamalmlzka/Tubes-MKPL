@@ -132,6 +132,15 @@ class RuanganTerpakai extends BaseController
                         // break;
                     }
                     // break;
+                    else {
+                        $detail_Ruangan[] = [
+                            'ruangan_id' => null,
+                            'ruangan_no_ruangan' => null,
+                            'ruangan_lokasi_kelas' => null,
+                            'ruangan_foto' => null,
+                            'jadwal_kelas' => null,
+                        ];
+                    }
                 }
             }
         } else {

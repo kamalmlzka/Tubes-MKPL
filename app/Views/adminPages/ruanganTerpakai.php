@@ -24,7 +24,7 @@
 
 	<!-- SIDEBAR -->
 	<section id="sidebar">
-		<a href="#" class="brand textdecoration-none">
+		<a href="<?= base_url('dashboard'); ?>" class="brand textdecoration-none">
 			<div class="nav-logo">
 				<img src="../assets/img/icon.png">
 				<span>Admin Page</span>
@@ -38,19 +38,19 @@
 				</a>
 			</li>
 			<li>
-				<a href="semuaRuangan.html" class="textdecoration-none">
+				<a href="<?= base_url("semuaRuangan"); ?>" class="textdecoration-none">
 					<i class='bx bi bi-building'></i>
 					<span class="text">Semua Ruangan</span>
 				</a>
 			</li>
 			<li class="active">
-				<a href="ruanganTerpakai.html" class="textdecoration-none">
+				<a href="<?= base_url('ruanganTerpakai'); ?>" class="textdecoration-none">
 					<i class='bx bi bi-building-fill-lock'></i>
 					<span class="text">Ruangan Terpakai</span>
 				</a>
 			</li>
 			<li>
-				<a href="ruanganTidakTerpakai.html" class="textdecoration-none">
+				<a href="<?= base_url('ruanganTidakTerpakai'); ?>" class="textdecoration-none">
 					<i class='bx bi bi-building-fill-exclamation'></i>
 					<span class="text">Ruangan Tidak Terpakai</span>
 				</a>
@@ -68,7 +68,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="daftarAccount.html" class="textdecoration-none">
+				<a href="<?= base_url("daftarAccount"); ?>" class="textdecoration-none">
 					<i class="bx bi bi-person-circle"></i>
 					<span class="text">Daftar Acount</span>
 				</a>
@@ -76,7 +76,7 @@
 		</ul>
 		<ul class="side-menu" class="textdecoration-none">
 			<li>
-				<a href="../index.html" class="logout textdecoration-none">
+				<a href="<?= base_url('logout'); ?>" class="logout textdecoration-none">
 					<i class='bx bxs-log-out-circle'></i>
 					<span class="text">Logout</span>
 				</a>
@@ -178,6 +178,12 @@
 											<input type="hidden" name="ruangan_id" value="<?= $data_ruangan['ruangan_id']; ?>">
 											<td><input type="submit" value="Lihat" style="border: none; background: none; padding: 0; text-decoration: underline; cursor: pointer; text-decoration: none;"></td>
 										</form>
+									<?php } else { ?>
+										<td>Tidak Ada Kelas</td>
+										<td>Tidak Ada Kelas</td>
+										<td>Tidak Ada Kelas</td>
+										<td>Tidak Ada Kelas</td>
+										<?php break; ?>
 									<?php } ?>
 									</tr>
 								<?php endforeach ?>

@@ -56,19 +56,18 @@ $user_status = session()->get('user_status');
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a href="<?= base_url("/"); ?>" id="navMenu-1">Home</a></li>
-            <li><a href="<?= base_url("daftarRuangan"); ?>" id="navMenu-3" class="active">Daftar Ruangan</a></li>
             <?php
             if ($user_id == null) {
             } else {
             ?>
+              <li><a href="<?= base_url("/"); ?>" id="navMenu-1">Home</a></li>
+              <li><a href="<?= base_url("daftarRuangan"); ?>" id="navMenu-3" class="active">Daftar Ruangan</a></li>
               <li><a href="<?= base_url("notifikasi"); ?>" id="navMenu-4">Notifikasi</a></li>
-              <li><a href="<?= base_url("profile"); ?>">profile</a></li>
+              <li><a href="<?= base_url("profile"); ?>" id="navMenu-5">profile</a></li>
             <?php
             }
             ?>
             <!-- <li><a href="about.html" id="navMenu-2">About</a></li>
-            <li><a href="services.html" id="navMenu-3">Services</a></li>
             <li><a href="blog.html" id="navMenu-5">Blog</a></li>
             <li class="dropdown"><a href="#" id="navMenu-6"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
               <ul>
