@@ -114,7 +114,11 @@ $user_status = session()->get('user_status');
   <!-- ======= Pinjam-ruangan Section ======= -->
   <section id="daftar-ruangan" class="daftar-ruangan">
     <div class="container" data-aos="fade-up">
-      <form action="<?= base_url(); ?>" method="POST">
+      <form action="<?= base_url("simpanPinjamRuangan"); ?>" method="POST">
+        <input type="hidden" name="ruangan_id" value="<?= $ruangan_id; ?>">
+        <input type="hidden" name="user_id" value="<?= $user_id; ?>">
+        <input type="hidden" name="nim" value="<?= $user_nim; ?>">
+        <input type="hidden" name="email" value="<?= $user_email; ?>">
         <div class="section-header">
           <h2>Pinjam Ruangan</h2>
         </div>
@@ -779,7 +783,7 @@ $user_status = session()->get('user_status');
           <div class="col-lg-10 d-flex flex-column">
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
               <div class="col-lg-10 mt-7">
-                <input type="text" class="form-control field-pinjam-ruangan" placeholder="<?= $user_email; ?>" disabled name="email">
+                <input type="text" class="form-control field-pinjam-ruangan" placeholder="<?= $user_email; ?>" disabled>
               </div>
             </div>
           </div>
@@ -800,7 +804,7 @@ $user_status = session()->get('user_status');
           <div class="col-lg-10 d-flex flex-column">
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
               <div class="col-lg-10 mt-7">
-                <input type="text" class="form-control field-pinjam-ruangan" placeholder="<?= $user_nim; ?>" disabled name="nim">
+                <input type="text" class="form-control field-pinjam-ruangan" placeholder="<?= $user_nim; ?>" disabled>
               </div>
             </div>
           </div>
@@ -821,7 +825,7 @@ $user_status = session()->get('user_status');
           <div class="col-lg-10 d-flex flex-column">
             <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
               <div class="col-lg-10 mt-7">
-                <textarea name="kegunaan" id="" cols="30" rows="10" class="form-control field-pinjam-ruangan"></textarea>
+                <textarea name="keterangan" id="keterangan" cols="30" rows="10" class="form-control field-pinjam-ruangan"></textarea>
               </div>
             </div>
           </div>
@@ -840,9 +844,6 @@ $user_status = session()->get('user_status');
           </div>
 
         </div>
-
-
-
       </form>
     </div>
   </section>
@@ -920,6 +921,24 @@ $user_status = session()->get('user_status');
 
   <div id="preloader"></div>
 
+  <script>
+    var textarea = document.getElementById('keterangan');
+
+    function checkTextarea() {
+      var text = textarea.value.trim();
+      if (text === '') {
+        alert('Silakan isi textarea sebelum melanjutkan!');
+        return false;
+      }
+
+      return true;
+    }
+    document.querySelector('form').addEventListener('submit', function(event) {
+      if (!checkTextarea()) {
+        event.preventDefault();
+      }
+    });
+  </script>
 
   <!-- framework JS Files -->
   <script src="assets/framework/bootstrap/js/bootstrap.bundle.min.js"></script>

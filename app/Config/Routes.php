@@ -33,7 +33,10 @@ $routes->get('/', 'Home::index');
 $routes->get('daftarRuangan', 'DaftarRuangan::daftarRuangan');
 $routes->post('detailRuangan', 'DetailRuangan::detailRuangan');
 $routes->post('pinjamRuangan', 'PinjamRuangan::pinjamRuangan');
+$routes->post('simpanPinjamRuangan', 'PinjamRuangan::simpanPinjamRuangan');
 $routes->get('notifikasi', 'Notifikasi::notifikasi');
+$routes->post('detailNotifikasi', 'Notifikasi::detailNotifikasi');
+$routes->post('deleteNotifikasi', 'Notifikasi::deleteNotifikasi');
 $routes->get('profile', 'Profile::profile');
 $routes->add('/login', 'Login::login', ['post']);
 $routes->get('logout', 'Login::logOut');
@@ -60,6 +63,10 @@ $routes->post('tambahJadwalRuangan', 'AdminControllers\LihatRuangan::tambahJadwa
 $routes->post('tambahJadwalRuangan/save', 'AdminControllers\LihatRuangan::saveTambahJadwalRuangan');
 $routes->post('editJadwalRuangan', 'AdminControllers\LihatRuangan::editJadwalRuangan');
 $routes->post('editJadwalRuangan/save', 'AdminControllers\LihatRuangan::saveEditJadwalRuangan');
+$routes->get('allnotifikasi', 'AdminControllers\Notifikasi::notifikasi');
+$routes->post('detailAdminNotifikasi', 'AdminControllers\Notifikasi::detailAdminNotifikasi');
+$routes->post('rejectedNotifikasi', 'AdminControllers\Notifikasi::rejectedNotifikasi');
+$routes->post('verification', 'AdminControllers\Notifikasi::verification');
 
 /*
  * --------------------------------------------------------------------

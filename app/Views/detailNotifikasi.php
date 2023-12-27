@@ -7,7 +7,6 @@ $user_email = session()->get('user_email');
 $user_password = session()->get('user_password');
 $user_status = session()->get('user_status');
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,7 +47,7 @@ $user_status = session()->get('user_status');
     <div id="navapp" class="fixed-top height-em-4">
       <div class="container-fluid container-xl d-flex align-items-center justify-content-between fixed-top py-3">
 
-        <a href="<?= base_url("/"); ?>" class="logo d-flex align-items-center">
+        <a href="index.html" class="logo d-flex align-items-center">
           <h1 id="navTitle">Monitoring Kelas<span class="dotlogo-primary" id="spanNavTitle">.</span>GKU</h1>
         </a>
 
@@ -67,26 +66,6 @@ $user_status = session()->get('user_status');
             <?php
             }
             ?>
-            <!-- <li><a href="about.html" id="navMenu-2">About</a></li>
-            <li><a href="blog.html" id="navMenu-5">Blog</a></li>
-            <li class="dropdown"><a href="#" id="navMenu-6"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
-            <li><a href="contact.html" id="navMenu-7">Contact</a></li> -->
             <?php
             if ($user_id == null) {
             ?>
@@ -112,65 +91,63 @@ $user_status = session()->get('user_status');
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Daftar-ruangan Section ======= -->
-  <section id="daftar-ruangan" class="daftar-ruangan">
-    <div class="container" data-aos="fade-up">
+  <main id="main">
 
-      <div class="section-header">
-        <h2>Notifikasi</h2>
-      </div>
+    <!-- ======= View Detail Section ======= -->
+    <section id="view-detail" class="view-detail">
+      <div class="container" data-aos="fade-up">
 
-      <div class="daftar-ruangan-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
+        <div class="section-header">
+          <h2>Detail Notifikasi</h2>
+        </div>
 
+        <div class="row justify-content-around gy-4">
+          <!-- <div>
+                <a href="#"><span><i class="bi bi-arrow-left"></i> </span>Kembali</a>
+              </div> -->
+          <div class="col-lg-6 img-bg" style="background-image: url(img/<?= $data_foto_kelas; ?>);" data-aos="zoom-in" data-aos-delay="100"></div>
 
-        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
-          <?php if (!empty($dataNotifikasi)) { ?>
-            <?php foreach ($dataNotifikasi as $notifikasi) : ?>
-              <div class="col-lg-4 col-md-6 portfolio-item filter-ku-1">
-                <div class="daftar-ruangan-content h-100">
-                  <img src="img/<?= $notifikasi['data_foto_kelas']; ?>" class="img-fluid" alt="">
-                  <div class="daftar-ruangan-info">
-                    <h4><?= $notifikasi['data_status_peminjaman']; ?></h4>
-                  </div>
-                </div>
-                <div class="post-content d-flex flex-column">
-
-                  <h3 class="post-title"><?= $notifikasi['data_no_kelas']; ?></h3>
-
-                  <div class="meta d-flex align-items-center">
-                    <div class="d-flex align-items-center">
-                      <!-- <i class="bi bi-book"></i> <span class="ps-2">Economics</span> -->
-                    </div>
-                    <!-- <span class="px-3 text-black-50">/</span> -->
-                    <div class="d-flex align-items-center">
-                      <i class="bi bi-clock"></i> <span class="ps-2"><?= $notifikasi['data_tanggal_peminjaman']; ?></span>
-                    </div>
-                  </div>
-
-                  <hr>
-
-                  <!-- <a href="detailNotifikasi.html"><span>Lihat</span><i class="bi bi-arrow-right"></i></a> -->
-                  <form action="<?= base_url('detailNotifikasi'); ?>" method="POST">
-                    <input type="hidden" name="ruangan_id" value="<?= $notifikasi['data_id_ruangan']; ?>">
-                    <input type="hidden" name="notifikasi_id" value="<?= $notifikasi['data_id_notifikasi']; ?>">
-                    <input type="submit" class="readmore stretched-link" value="Lihat" style="border: none; background: none; padding: 0; text-decoration: underline; cursor: pointer; text-decoration: none; margin-right:10px"><i class="bi bi-arrow-right"></i>
-                  </form>
-
-                </div>
+          <!-- <div class="col-lg-5 d-flex flex-column justify-content-center"> -->
+          <div class="col-lg-5 d-flex flex-column">
+            <h3>Ruang <?= $data_no_kelas; ?></h3>
+            <p><?= $data_lokasi_kelas; ?></p>
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+              <div>
+                <h4>Tanggal Pinjaman</h4>
+                <span><?= $data_tanggal_peminjaman; ?></span>
               </div>
-              <!-- End daftar-ruangan Item -->
-            <?php endforeach; ?>
-          <?php } else { ?>
-            <div class="section-header">
-              <h4>Tidak Ada Notifikasi</h4>
             </div>
-          <?php } ?>
-        </div><!-- End daftar-ruangan Container -->
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+              <div>
+                <h4>Status Pinjaman</h4>
+                <span><?= $data_status_peminjaman; ?></span>
+              </div>
+            </div>
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-clock"></i>
+              <div>
+                <h4>Detail Peminjaman</h4>
+                <span><?= $data_username; ?></span><br>
+                <span><?= $data_nim; ?></span><br>
+                <span><?= $data_email; ?></span><br>
+                <span><?= $data_jadwal; ?></span><br>
+                <span><?= $data_keterangan; ?></span><br>
+              </div>
+            </div>
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+              <!-- <a class="btn-addroom" href="#">Batal Peminjaman</a>
+              <a class="btn-addroom" href="editPinjamRuang.html">Edit</a> -->
+              <form action="<?= base_url("deleteNotifikasi"); ?>" method="POST">
+                <input type="hidden" name="notifikasi_id" value="<?= $data_id_notifikasi; ?>">
+                <input type="submit" class="btn-addroom textdecoration-none" value="Batal Peminjaman">
+              </form>
+            </div>
+          </div>
+        </div>
 
       </div>
-
-    </div>
-  </section><!-- End daftar-ruangan Section -->
+    </section><!-- End View Detail Section -->
+  </main>
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">

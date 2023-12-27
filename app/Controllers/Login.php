@@ -80,6 +80,7 @@ class Login extends BaseController
             'user_status' => ""
         ];
         session()->set($dataSesion);
+        // dd($dataSesion);
         return redirect()->to(base_url('/'));
     }
 }
