@@ -159,102 +159,41 @@ $user_status = session()->get('user_status');
 
       <div class="row gy-5">
 
-        <div class="col-xl-4 col-md-6">
-          <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
+        <?php
+        foreach ($ruangan as $dataRuangan) {
+        ?>
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
 
-            <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/kelas.jpg" class="img-fluid" alt="">
-              <span class="post-date"></span>
-            </div>
-
-            <div class="post-content d-flex flex-column">
-
-              <h3 class="post-title">KU3 {04 20}</h3>
-
-              <div class="meta d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-book"></i> <span class="ps-2">Economics</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-clock"></i> <span class="ps-2">08.30 - 10.30</span>
-                </div>
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/kelas.jpg" class="img-fluid" alt="">
+                <span class="post-date"></span>
               </div>
 
-              <hr>
+              <div class="post-content d-flex flex-column">
 
-              <a href="#" class="readmore stretched-link"><span>Lihat</span><i class="bi bi-arrow-right"></i></a>
+                <h3 class="post-title">KU3 {04 20}</h3>
 
-            </div>
-
-          </div>
-        </div>
-        <!-- End post item -->
-
-        <div class="col-xl-4 col-md-6">
-          <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
-
-            <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/kelas.jpg" class="img-fluid" alt="">
-              <span class="post-date"></span>
-            </div>
-
-            <div class="post-content d-flex flex-column">
-
-              <h3 class="post-title">KU3 {04 20}</h3>
-
-              <div class="meta d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-book"></i> <span class="ps-2">Economics</span>
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-book"></i> <span class="ps-2">Economics</span>
+                  </div>
+                  <span class="px-3 text-black-50">/</span>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-clock"></i> <span class="ps-2">08.30 - 10.30</span>
+                  </div>
                 </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-clock"></i> <span class="ps-2">08.30 - 10.30</span>
-                </div>
+
+                <hr>
+
+                <a href="#" class="readmore stretched-link"><span>Lihat</span><i class="bi bi-arrow-right"></i></a>
+
               </div>
 
-              <hr>
-
-              <a href="#" class="readmore stretched-link"><span>Lihat</span><i class="bi bi-arrow-right"></i></a>
-
             </div>
-
           </div>
-        </div>
-        <!-- End post item -->
-
-        <div class="col-xl-4 col-md-6">
-          <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
-
-            <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/kelas.jpg" class="img-fluid" alt="">
-              <span class="post-date"></span>
-            </div>
-
-            <div class="post-content d-flex flex-column">
-
-              <h3 class="post-title">KU3 {04 20}</h3>
-
-              <div class="meta d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-book"></i> <span class="ps-2">Economics</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-clock"></i> <span class="ps-2">08.30 - 10.30</span>
-                </div>
-              </div>
-
-              <hr>
-
-              <a href="#" class="readmore stretched-link"><span>Lihat</span><i class="bi bi-arrow-right"></i></a>
-
-            </div>
-
-          </div>
-        </div>
-        <!-- End post item -->
-
+          <!-- End post item -->
+        <?php } ?>
 
       </div>
 

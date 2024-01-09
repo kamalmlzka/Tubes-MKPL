@@ -46,7 +46,7 @@ class Login extends BaseController
                 ];
                 session()->set($dataSesion);
                 return redirect()->to(base_url('dashboard'));
-            } else {
+            } elseif (empty($err) && $dataUser['status'] === "user") {
                 $dataSesion = [
                     'user_id' => $dataUser['id'],
                     'user_fname' => $dataUser['nama_depan'],

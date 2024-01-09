@@ -101,21 +101,21 @@
 				<li>
 					<i class="bx bi bi-building"></i>
 					<span class="text">
-						<h3>100</h3>
+						<h3><?= count($semua_ruangan); ?></h3>
 						<p>Total Semua Ruang</p>
 					</span>
 				</li>
 				<li>
 					<i class='bx bi-building-check'></i>
 					<span class="text">
-						<h3>80</h3>
+						<h3><?= count($ruang_terpakai); ?></h3>
 						<p>Total Ruang Terpakai</p>
 					</span>
 				</li>
 				<li>
 					<i class='bx bi-building-add'></i>
 					<span class="text">
-						<h3>20</h3>
+						<h3><?= count($ruang_tidak_terpakai); ?></h3>
 						<p>Total Ruang Kosong</p>
 					</span>
 				</li>
@@ -124,145 +124,36 @@
 				<li>
 					<i class='bx bi-bell'></i>
 					<span class="text">
-						<h3>12</h3>
+						<h3><?= count($notifikasi); ?></h3>
 						<p>Total Semua Notifikasi</p>
-					</span>
-				</li>
-				<li>
-					<i class='bx bi-clock'></i>
-					<span class="text">
-						<h3>6</h3>
-						<p>Total Ruangan Sedang Terpinjam</p>
-					</span>
-				</li>
-				<li>
-					<i class='bx bi-clipboard-data'></i>
-					<span class="text">
-						<h3>24</h3>
-						<p>Total Ruangan Terpinjam</p>
 					</span>
 				</li>
 				<li>
 					<i class='bx bi-person'></i>
 					<span class="text">
-						<h3>24</h3>
+						<h3><?= count($akun); ?></h3>
 						<p>Total Akun Terdaftar</p>
 					</span>
 				</li>
 			</ul>
 
 
-			<div class="table-data">
-				<div class="order">
-					<div class="head">
-						<h3>Ruang Terpakai</h3>
-					</div>
-					<table>
-						<thead>
-							<tr>
-								<th>No. Ruang</th>
-								<th>Durasi</th>
-								<th>Mata Kuliah</th>
-								<th>Status</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img src="../assets/img/icon.png">
-									<p style="margin-top: 18px;">KU 01 03</p>
-								</td>
-								<td>10:00 - 12:30 Pm</td>
-								<td>Ekonomi</td>
-								<td><span class="status completed">Ongoing</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../assets/img/icon.png">
-									<p style="margin-top: 18px;">KU 01 03</p>
-								</td>
-								<td>10:00 - 12:30 Pm</td>
-								<td>Ekonomi</td>
-								<td><span class="status completed">Ongoing</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../assets/img/icon.png">
-									<p style="margin-top: 18px;">KU 01 03</p>
-								</td>
-								<td>10:00 - 12:30 Pm</td>
-								<td>Ekonomi</td>
-								<td><span class="status completed">Ongoing</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../assets/img/icon.png">
-									<p style="margin-top: 18px;">KU 01 03</p>
-								</td>
-								<td>10:00 - 12:30 Pm</td>
-								<td>Ekonomi</td>
-								<td><span class="status completed">Ongoing</span></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
 
-			<div class="table-data">
-				<div class="order">
-					<div class="head">
-						<h3>Ruangan Sedang Terpinjam</h3>
-					</div>
-					<table>
-						<thead>
-							<tr>
-								<th>No. Ruang</th>
-								<th>Durasi</th>
-								<th>Mata Kuliah</th>
-								<th>Status</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<img src="../assets/img/icon.png">
-									<p style="margin-top: 18px;">KU 01 03</p>
-								</td>
-								<td>10:00 - 12:30 Pm</td>
-								<td>Ekonomi</td>
-								<td><span class="status completed">Ongoing</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../assets/img/icon.png">
-									<p style="margin-top: 18px;">KU 01 03</p>
-								</td>
-								<td>10:00 - 12:30 Pm</td>
-								<td>Ekonomi</td>
-								<td><span class="status completed">Ongoing</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../assets/img/icon.png">
-									<p style="margin-top: 18px;">KU 01 03</p>
-								</td>
-								<td>10:00 - 12:30 Pm</td>
-								<td>Ekonomi</td>
-								<td><span class="status completed">Ongoing</span></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../assets/img/icon.png">
-									<p style="margin-top: 18px;">KU 01 03</p>
-								</td>
-								<td>10:00 - 12:30 Pm</td>
-								<td>Ekonomi</td>
-								<td><span class="status completed">Ongoing</span></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
 		</main>
 		<!-- MAIN -->
 	</section>

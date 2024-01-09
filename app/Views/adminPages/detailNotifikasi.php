@@ -55,14 +55,14 @@
 					<span class="text">Ruangan Tidak Terpakai</span>
 				</a>
 			</li>
-			<li>
+			<!-- <li>
 				<a href="ruanganTerpinjam.html" class="textdecoration-none">
 					<i class='bx bi bi-building-check'></i>
 					<span class="text">Ruangan Terpinjam</span>
 				</a>
-			</li>
+			</li> -->
 			<li class="active">
-				<a href="notifikasi.html" class="textdecoration-none">
+				<a href="<?= base_url("allnotifikasi"); ?>" class="textdecoration-none">
 					<i class='bx bi bi-bell'></i>
 					<span class="text">Notifikasi</span>
 				</a>

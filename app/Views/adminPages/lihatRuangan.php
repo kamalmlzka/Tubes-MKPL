@@ -78,7 +78,7 @@
                 </a>
             </li>
             <li>
-                <a href="notifikasi.html" class="textdecoration-none">
+                <a href="<?= base_url("allnotifikasi"); ?>" class="textdecoration-none">
                     <i class='bx bi bi-bell'></i>
                     <span class="text">Notifikasi</span>
                 </a>
