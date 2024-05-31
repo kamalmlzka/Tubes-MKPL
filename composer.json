@@ -13,6 +13,7 @@
         "psr/log": "^1.1"
     },
     "require-dev": {
+<<<<<<< HEAD
         "codeigniter/coding-standard": "^1.5",
         "fakerphp/faker": "^1.9",
         "friendsofphp/php-cs-fixer": "3.13.0",
@@ -20,6 +21,15 @@
         "mikey179/vfsstream": "^1.6",
         "nexusphp/cs-config": "^3.6",
         "phpunit/phpunit": "^9",
+=======
+        "kint-php/kint": "^5.0.4",
+        "codeigniter/coding-standard": "^1.5",
+        "fakerphp/faker": "^1.9",
+        "friendsofphp/php-cs-fixer": "3.13.0",
+        "mikey179/vfsstream": "^1.6",
+        "nexusphp/cs-config": "^3.6",
+        "phpunit/phpunit": "^9.1",
+>>>>>>> origin/testing_rheina
         "predis/predis": "^1.1 || ^2.0"
     },
     "suggest": {
