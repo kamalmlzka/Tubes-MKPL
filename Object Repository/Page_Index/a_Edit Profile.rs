@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Edit Profile</name>
+   <tag></tag>
+   <elementGuidId>849ffef9-5d15-428d-86f2-94c2247fe69a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>a.edit-profile</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//section[@id='view-detail']/div/div[2]/div[2]/div[6]/div[2]/div/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>183cece3-f442-4679-892c-f962abf92cc1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>edit-profile</value>
+      <webElementGuid>b6c40cb8-211a-416d-93d0-1b7ca7e3dd24</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-bs-toggle</name>
+      <type>Main</type>
+      <value>modal</value>
+      <webElementGuid>5c4a022e-75de-4dbe-adab-4e2edb56251f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-bs-target</name>
+      <type>Main</type>
+      <value>#edit-prfile-modal</value>
+      <webElementGuid>ca32be30-f974-474a-ba29-d4a12b22de7d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Edit Profile</value>
+      <webElementGuid>01e637e6-11be-4f5b-9429-6f49305f2cb2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;view-detail&quot;)/div[@class=&quot;container aos-init aos-animate&quot;]/div[@class=&quot;row justify-content-around gy-4&quot;]/div[@class=&quot;col-lg-5 d-flex flex-column&quot;]/div[@class=&quot;row container-for-btn&quot;]/div[@class=&quot;col-lg-6 d-flex flex-column&quot;]/div[@class=&quot;icon-box d-flex position-relative aos-init aos-animate&quot;]/a[@class=&quot;edit-profile&quot;]</value>
+      <webElementGuid>7c43fe4b-151d-4fac-bb0d-e628377a4e50</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//section[@id='view-detail']/div/div[2]/div[2]/div[6]/div[2]/div/a</value>
+      <webElementGuid>7a2f971a-9b8e-45a0-b014-ef83d4254eb9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Edit Profile')]</value>
+      <webElementGuid>f7aa128a-2ca8-4076-8076-381570868ff9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ganti Password'])[1]/following::a[1]</value>
+      <webElementGuid>03458965-f3f7-4cb2-ba70-63e01906ebb7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='**********'])[1]/following::a[2]</value>
+      <webElementGuid>0c225dc7-5171-4c3c-9a0c-810d8543dfd8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit Profile'])[2]/preceding::a[1]</value>
+      <webElementGuid>dc9facab-f126-4cb9-af82-32f79c8717b4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama'])[2]/preceding::a[1]</value>
+      <webElementGuid>c1641e51-05d0-4693-9ee3-e3c219da6b5b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Edit Profile']/parent::*</value>
+      <webElementGuid>cb80baec-7ed1-46bb-939a-bd4dc966450a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, '')])[8]</value>
+      <webElementGuid>ba918d49-8698-4e2f-8bde-331aedccc56e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/a</value>
+      <webElementGuid>954b7724-8a34-4b3b-aa3f-666755fd011b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[(text() = 'Edit Profile' or . = 'Edit Profile')]</value>
+      <webElementGuid>e64397d1-3117-449f-958a-35c3d7aca076</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

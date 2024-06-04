@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Ganti Password</name>
+   <tag></tag>
+   <elementGuidId>1a0728d0-c627-4d8e-8a7f-8ef3c6d1577c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>a.edit-pass</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//section[@id='view-detail']/div/div[2]/div[2]/div[6]/div/div/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>e3004e5e-69e1-496b-8121-4bea8e0c2252</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>edit-pass</value>
+      <webElementGuid>e75a707c-e4e6-4c79-b6b7-de5495365daa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-bs-toggle</name>
+      <type>Main</type>
+      <value>modal</value>
+      <webElementGuid>257dd0b3-50b8-43b0-be97-7646c03ce9e1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-bs-target</name>
+      <type>Main</type>
+      <value>#edit-password-modal</value>
+      <webElementGuid>b88e2307-8f14-4500-b351-67a01011625f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Ganti Password</value>
+      <webElementGuid>864ab559-5c47-4e91-bcec-6801139c460d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;view-detail&quot;)/div[@class=&quot;container aos-init aos-animate&quot;]/div[@class=&quot;row justify-content-around gy-4&quot;]/div[@class=&quot;col-lg-5 d-flex flex-column&quot;]/div[@class=&quot;row container-for-btn&quot;]/div[@class=&quot;col-lg-6 d-flex flex-column&quot;]/div[@class=&quot;icon-box d-flex position-relative aos-init aos-animate&quot;]/a[@class=&quot;edit-pass&quot;]</value>
+      <webElementGuid>cd887d1f-ff51-4178-89ff-54c3825b9a6f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//section[@id='view-detail']/div/div[2]/div[2]/div[6]/div/div/a</value>
+      <webElementGuid>bfb9d9d4-d3ca-4a72-990d-63a4d2ea4086</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Ganti Password')]</value>
+      <webElementGuid>221e833c-9bfc-4325-8275-f5f2b691043e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='**********'])[1]/following::a[1]</value>
+      <webElementGuid>9d376171-f4b8-4796-a9d4-5c604d16a3c3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Password'])[1]/following::a[1]</value>
+      <webElementGuid>d5385e72-493b-4506-8689-199e4adf15fe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit Profile'])[1]/preceding::a[1]</value>
+      <webElementGuid>5652c791-1f6d-41fe-9440-64808a16d933</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit Profile'])[2]/preceding::a[2]</value>
+      <webElementGuid>a2def937-fa36-4d32-8c3f-c7fb332d9499</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Ganti Password']/parent::*</value>
+      <webElementGuid>a31f2c4c-7cd0-4542-9874-21f6381a6642</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, '')])[7]</value>
+      <webElementGuid>1d94572a-975f-45d9-830f-1d94fa063b0e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[6]/div/div/a</value>
+      <webElementGuid>eba6c3fa-6350-4773-876e-02752964c7ff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[(text() = 'Ganti Password' or . = 'Ganti Password')]</value>
+      <webElementGuid>f1a55c5b-8194-47b2-afe6-4f10b70e26c9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

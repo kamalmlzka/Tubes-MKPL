@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Lihat</name>
+   <tag></tag>
+   <elementGuidId>4533582e-773e-4ea2-acda-3b57a38a20a2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>a.readmore.stretched-link</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//section[@id='daftar-ruangan']/div/div[2]/div/div/div[2]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>3da4472b-c590-48c1-b909-1548aea2a950</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>detailNotifikasi.html</value>
+      <webElementGuid>8f4adbbe-b1cc-43e3-a7ca-aee07c281491</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>readmore stretched-link</value>
+      <webElementGuid>8e4ead4c-6d4b-448d-9bed-585fc9dbf8d5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Lihat</value>
+      <webElementGuid>1ee503b2-feb5-49e9-a750-0474089df5d3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;daftar-ruangan&quot;)/div[@class=&quot;container aos-init aos-animate&quot;]/div[@class=&quot;daftar-ruangan-isotope&quot;]/div[@class=&quot;row gy-4 portfolio-container aos-init aos-animate&quot;]/div[@class=&quot;col-lg-4 col-md-6 portfolio-item filter-ku-1&quot;]/div[@class=&quot;post-content d-flex flex-column&quot;]/a[@class=&quot;readmore stretched-link&quot;]</value>
+      <webElementGuid>e6120739-98cb-4a1f-ad94-612f2d32d245</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//section[@id='daftar-ruangan']/div/div[2]/div/div/div[2]/a</value>
+      <webElementGuid>c0d57ecc-96a6-451f-a3a3-39dfe6efda95</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='KU1 {04 20}'])[1]/following::a[1]</value>
+      <webElementGuid>15efdd3b-a0b2-4497-bb3f-3ab3090230a7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Menunggu Verifikasi'])[1]/following::a[1]</value>
+      <webElementGuid>67589d9d-8d39-4a2d-97f7-04954ecc0ece</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Menunggu Verifikasi'])[2]/preceding::a[1]</value>
+      <webElementGuid>6dd6237d-2803-4e73-aa4f-0653a868dbcb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, 'detailNotifikasi.html')]</value>
+      <webElementGuid>a6f88913-e735-4521-9019-83fdc57b0dff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/a</value>
+      <webElementGuid>9db5b286-384e-4627-9127-5a98e5c7ed85</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = 'detailNotifikasi.html' and (text() = 'Lihat' or . = 'Lihat')]</value>
+      <webElementGuid>0a8ce9e7-6e93-4ef8-a21b-f3fa448aeae0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='/'])[1]/following::a[1]</value>
+      <webElementGuid>f986a331-99ad-4882-b50e-9db46baf0ba0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Economics'])[1]/following::a[1]</value>
+      <webElementGuid>6fc2a751-9a90-4c8a-81e7-627fd1bdd69b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ongoing'])[2]/preceding::a[1]</value>
+      <webElementGuid>4550c6d0-4a0e-42fa-bed0-a1f73ecf5261</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, 'detailRuangan.html')]</value>
+      <webElementGuid>f8c24894-116c-4fa4-ad64-614910a4179e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = 'detailRuangan.html' and (text() = 'Lihat' or . = 'Lihat')]</value>
+      <webElementGuid>bbcc2fe9-871d-4719-a1ee-83867ab383e6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

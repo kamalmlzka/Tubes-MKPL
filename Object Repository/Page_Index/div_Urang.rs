@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Urang</name>
+   <tag></tag>
+   <elementGuidId>d8bbd2bd-85cf-4dbb-b4b9-a0204f101c8f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.data-field-profile</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//section[@id='view-detail']/div/div[2]/div[2]/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>b1bae3a2-57d8-4395-9500-bc8f604675e0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>data-field-profile</value>
+      <webElementGuid>233d4f80-a03e-4c89-b01a-f0cf473ab4db</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                        Urang
+                    </value>
+      <webElementGuid>3823c32e-d642-4684-b4c8-21f79acd4867</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;view-detail&quot;)/div[@class=&quot;container aos-init aos-animate&quot;]/div[@class=&quot;row justify-content-around gy-4&quot;]/div[@class=&quot;col-lg-5 d-flex flex-column&quot;]/div[@class=&quot;data-field-profile&quot;]</value>
+      <webElementGuid>b52a4bb5-fe1b-4ae4-bd9e-5b9e305a4bef</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//section[@id='view-detail']/div/div[2]/div[2]/div</value>
+      <webElementGuid>2e8a4bbe-46f0-428f-b57b-451ff35cdf22</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama'])[1]/following::div[1]</value>
+      <webElementGuid>643a6486-16df-4a05-8ecd-3b7ad15ebe0a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Profile'])[1]/following::div[4]</value>
+      <webElementGuid>22b4ee3d-4785-48a1-b6e6-f4be0e810255</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nim'])[1]/preceding::div[1]</value>
+      <webElementGuid>5c0ec6e3-b16e-44de-89f1-9149016c7928</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/div</value>
+      <webElementGuid>445069e5-ac74-4517-9a9e-93e5d1336d95</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = '
+                        Urang
+                    ' or . = '
+                        Urang
+                    ')]</value>
+      <webElementGuid>90a72fb4-c7d8-4931-adab-f8597279236c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

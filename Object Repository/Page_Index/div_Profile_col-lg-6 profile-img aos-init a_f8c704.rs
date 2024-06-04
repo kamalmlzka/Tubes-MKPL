@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Profile_col-lg-6 profile-img aos-init a_f8c704</name>
+   <tag></tag>
+   <elementGuidId>9e63f701-40bf-4657-94f4-93d85c10f9b2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.col-lg-6.profile-img.aos-init.aos-animate</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//section[@id='view-detail']/div/div[2]/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>1ae07944-9123-4c24-babc-af793ca7e014</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>col-lg-6 profile-img aos-init aos-animate</value>
+      <webElementGuid>9fd8e039-224e-4ad8-8d96-a118b812643e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-aos</name>
+      <type>Main</type>
+      <value>zoom-in</value>
+      <webElementGuid>7303858e-aa04-4ada-b662-912bedb6406d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-aos-delay</name>
+      <type>Main</type>
+      <value>100</value>
+      <webElementGuid>5969b78a-92b7-42d6-a547-0fa5e69d858b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;view-detail&quot;)/div[@class=&quot;container aos-init aos-animate&quot;]/div[@class=&quot;row justify-content-around gy-4&quot;]/div[@class=&quot;col-lg-6 profile-img aos-init aos-animate&quot;]</value>
+      <webElementGuid>68c1c908-eb6e-4dce-b401-850e89f53896</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//section[@id='view-detail']/div/div[2]/div</value>
+      <webElementGuid>228e4180-977b-4b7f-b70c-b1a19c596430</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div[2]/div</value>
+      <webElementGuid>082a36e6-746c-4436-8145-f0f48783d031</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
