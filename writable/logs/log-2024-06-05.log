@@ -1,0 +1,422 @@
+INFO - 2024-06-05 14:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 07:05:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 07:05:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 07:05:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 07:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 07:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 14:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 14:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 14:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 14:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 14:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 07:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 07:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-05 14:41:48 --> Error connecting to the database: Error: Class "SQLite3" not found in C:\xampp\htdocs\TubesWebPro\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 C:\xampp\htdocs\TubesWebPro\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(574): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 C:\xampp\htdocs\TubesWebPro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TubesWebPro\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TubesWebPro\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\TubesWebPro\app\Controllers\Index.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\TubesWebPro\system\Test\ControllerTester.php(171): App\Controllers\Index->index()
+#8 C:\xampp\htdocs\TubesWebPro\tests\IndexTest.php(14): IndexTest->execute('index')
+#9 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1617): IndexTest->testIndex()
+#10 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1223): PHPUnit\Framework\TestCase->runTest()
+#11 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#12 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(IndexTest))
+#13 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#14 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#15 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#16 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#17 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#18 C:\xampp\htdocs\TubesWebPro\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#19 {main}
+ERROR - 2024-06-05 07:42:41 --> Error connecting to the database: Error: Class "SQLite3" not found in C:\xampp\htdocs\TubesWebPro\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 C:\xampp\htdocs\TubesWebPro\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#4 C:\xampp\htdocs\TubesWebPro\system\Test\CIUnitTestCase.php(248): ExampleDatabaseTest->setUpDatabase()
+#5 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1216): CodeIgniter\Test\CIUnitTestCase->setUp()
+#6 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#7 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#8 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#9 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#10 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#11 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#12 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#13 C:\xampp\htdocs\TubesWebPro\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#14 {main}
+ERROR - 2024-06-05 07:42:41 --> Error connecting to the database: Error: Class "SQLite3" not found in C:\xampp\htdocs\TubesWebPro\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 C:\xampp\htdocs\TubesWebPro\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#4 C:\xampp\htdocs\TubesWebPro\system\Test\CIUnitTestCase.php(248): ExampleDatabaseTest->setUpDatabase()
+#5 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1216): CodeIgniter\Test\CIUnitTestCase->setUp()
+#6 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#7 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#8 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#9 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#10 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#11 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#12 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#13 C:\xampp\htdocs\TubesWebPro\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#14 {main}
+ERROR - 2024-06-05 07:44:53 --> Error connecting to the database: Error: Class "SQLite3" not found in C:\xampp\htdocs\TubesWebPro\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 C:\xampp\htdocs\TubesWebPro\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#4 C:\xampp\htdocs\TubesWebPro\system\Test\CIUnitTestCase.php(248): ExampleDatabaseTest->setUpDatabase()
+#5 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1216): CodeIgniter\Test\CIUnitTestCase->setUp()
+#6 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#7 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#8 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#9 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#10 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#11 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#12 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#13 C:\xampp\htdocs\TubesWebPro\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#14 {main}
+ERROR - 2024-06-05 07:44:53 --> Error connecting to the database: Error: Class "SQLite3" not found in C:\xampp\htdocs\TubesWebPro\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 C:\xampp\htdocs\TubesWebPro\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#4 C:\xampp\htdocs\TubesWebPro\system\Test\CIUnitTestCase.php(248): ExampleDatabaseTest->setUpDatabase()
+#5 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1216): CodeIgniter\Test\CIUnitTestCase->setUp()
+#6 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#7 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#8 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#9 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#10 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#11 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#12 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#13 C:\xampp\htdocs\TubesWebPro\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#14 {main}
+ERROR - 2024-06-05 07:45:29 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('127.0.0.1', '', Object(SensitiveParameterValue), ':memory:', 3306, '', 0)
+#1 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#4 C:\xampp\htdocs\TubesWebPro\system\Test\CIUnitTestCase.php(248): ExampleDatabaseTest->setUpDatabase()
+#5 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1216): CodeIgniter\Test\CIUnitTestCase->setUp()
+#6 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#7 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#8 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#9 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#10 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#11 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#12 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#13 C:\xampp\htdocs\TubesWebPro\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#3 C:\xampp\htdocs\TubesWebPro\system\Test\CIUnitTestCase.php(248): ExampleDatabaseTest->setUpDatabase()
+#4 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1216): CodeIgniter\Test\CIUnitTestCase->setUp()
+#5 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#6 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#7 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#8 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#9 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#10 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#11 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#12 C:\xampp\htdocs\TubesWebPro\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-06-05 07:45:29 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('127.0.0.1', '', Object(SensitiveParameterValue), ':memory:', 3306, '', 0)
+#1 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#4 C:\xampp\htdocs\TubesWebPro\system\Test\CIUnitTestCase.php(248): ExampleDatabaseTest->setUpDatabase()
+#5 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1216): CodeIgniter\Test\CIUnitTestCase->setUp()
+#6 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#7 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#8 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#9 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#10 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#11 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#12 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#13 C:\xampp\htdocs\TubesWebPro\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#3 C:\xampp\htdocs\TubesWebPro\system\Test\CIUnitTestCase.php(248): ExampleDatabaseTest->setUpDatabase()
+#4 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1216): CodeIgniter\Test\CIUnitTestCase->setUp()
+#5 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#6 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#7 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#8 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#9 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#10 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#11 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#12 C:\xampp\htdocs\TubesWebPro\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-06-05 07:47:20 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('127.0.0.1', '', Object(SensitiveParameterValue), ':memory:', 3306, '', 0)
+#1 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#4 C:\xampp\htdocs\TubesWebPro\system\Test\CIUnitTestCase.php(248): ExampleDatabaseTest->setUpDatabase()
+#5 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1216): CodeIgniter\Test\CIUnitTestCase->setUp()
+#6 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#7 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#8 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#9 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#10 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#11 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#12 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#13 C:\xampp\htdocs\TubesWebPro\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#3 C:\xampp\htdocs\TubesWebPro\system\Test\CIUnitTestCase.php(248): ExampleDatabaseTest->setUpDatabase()
+#4 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1216): CodeIgniter\Test\CIUnitTestCase->setUp()
+#5 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#6 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#7 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#8 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#9 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#10 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#11 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#12 C:\xampp\htdocs\TubesWebPro\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-06-05 07:47:20 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('127.0.0.1', '', Object(SensitiveParameterValue), ':memory:', 3306, '', 0)
+#1 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#4 C:\xampp\htdocs\TubesWebPro\system\Test\CIUnitTestCase.php(248): ExampleDatabaseTest->setUpDatabase()
+#5 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1216): CodeIgniter\Test\CIUnitTestCase->setUp()
+#6 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#7 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#8 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#9 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#10 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#11 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#12 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#13 C:\xampp\htdocs\TubesWebPro\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#3 C:\xampp\htdocs\TubesWebPro\system\Test\CIUnitTestCase.php(248): ExampleDatabaseTest->setUpDatabase()
+#4 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1216): CodeIgniter\Test\CIUnitTestCase->setUp()
+#5 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#6 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#7 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#8 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#9 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#10 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#11 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#12 C:\xampp\htdocs\TubesWebPro\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-06-05 07:47:56 --> Error connecting to the database: mysqli_sql_exception: Unknown database ':memory:' in C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), ':memory:', 3306, '', 0)
+#1 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#4 C:\xampp\htdocs\TubesWebPro\system\Test\CIUnitTestCase.php(248): ExampleDatabaseTest->setUpDatabase()
+#5 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1216): CodeIgniter\Test\CIUnitTestCase->setUp()
+#6 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#7 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#8 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#9 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#10 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#11 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#12 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#13 C:\xampp\htdocs\TubesWebPro\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database ':memory:' in C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#3 C:\xampp\htdocs\TubesWebPro\system\Test\CIUnitTestCase.php(248): ExampleDatabaseTest->setUpDatabase()
+#4 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1216): CodeIgniter\Test\CIUnitTestCase->setUp()
+#5 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#6 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#7 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#8 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#9 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#10 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#11 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#12 C:\xampp\htdocs\TubesWebPro\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2024-06-05 07:47:56 --> Error connecting to the database: mysqli_sql_exception: Unknown database ':memory:' in C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), ':memory:', 3306, '', 0)
+#1 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#4 C:\xampp\htdocs\TubesWebPro\system\Test\CIUnitTestCase.php(248): ExampleDatabaseTest->setUpDatabase()
+#5 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1216): CodeIgniter\Test\CIUnitTestCase->setUp()
+#6 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#7 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#8 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#9 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#10 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#11 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#12 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#13 C:\xampp\htdocs\TubesWebPro\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database ':memory:' in C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\TubesWebPro\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#3 C:\xampp\htdocs\TubesWebPro\system\Test\CIUnitTestCase.php(248): ExampleDatabaseTest->setUpDatabase()
+#4 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1216): CodeIgniter\Test\CIUnitTestCase->setUp()
+#5 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#6 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#7 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#8 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#9 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#10 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#11 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#12 C:\xampp\htdocs\TubesWebPro\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#13 {main}
+INFO - 2024-06-05 07:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 14:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 07:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 07:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 14:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 08:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 15:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 08:12:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 08:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 15:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 08:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-05 15:18:26 --> mysqli_sql_exception: Table 'tubes_webpro.db_ruangan' doesn't exist in C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\TubesWebPro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TubesWebPro\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TubesWebPro\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\TubesWebPro\app\Controllers\Index.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\TubesWebPro\system\CodeIgniter.php(932): App\Controllers\Index->index()
+#8 C:\xampp\htdocs\TubesWebPro\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#9 C:\xampp\htdocs\TubesWebPro\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(Object(CodeIgniter\Router\RouteCollection), Object(Config\Cache), true)
+#10 C:\xampp\htdocs\TubesWebPro\system\Test\FeatureTestCase.php(188): CodeIgniter\CodeIgniter->run(Object(CodeIgniter\Router\RouteCollection), true)
+#11 C:\xampp\htdocs\TubesWebPro\tests\view\RegisterTest.php(9): CodeIgniter\Test\FeatureTestCase->call('GET', 'register')
+#12 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1617): RegisterTest->testRegisterPage()
+#13 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1223): PHPUnit\Framework\TestCase->runTest()
+#14 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#15 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(RegisterTest))
+#16 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#17 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#18 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#19 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#20 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#21 C:\xampp\htdocs\TubesWebPro\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#22 {main}
+ERROR - 2024-06-05 15:18:41 --> mysqli_sql_exception: Table 'tubes_webpro.db_ruangan' doesn't exist in C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\TubesWebPro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TubesWebPro\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TubesWebPro\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\TubesWebPro\app\Controllers\Index.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\TubesWebPro\system\CodeIgniter.php(932): App\Controllers\Index->index()
+#8 C:\xampp\htdocs\TubesWebPro\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#9 C:\xampp\htdocs\TubesWebPro\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(Object(CodeIgniter\Router\RouteCollection), Object(Config\Cache), true)
+#10 C:\xampp\htdocs\TubesWebPro\system\Test\FeatureTestCase.php(188): CodeIgniter\CodeIgniter->run(Object(CodeIgniter\Router\RouteCollection), true)
+#11 C:\xampp\htdocs\TubesWebPro\tests\view\RegisterTest.php(9): CodeIgniter\Test\FeatureTestCase->call('GET', 'register')
+#12 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1617): RegisterTest->testRegisterPage()
+#13 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1223): PHPUnit\Framework\TestCase->runTest()
+#14 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#15 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(RegisterTest))
+#16 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#17 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#18 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#19 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#20 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#21 C:\xampp\htdocs\TubesWebPro\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#22 {main}
+ERROR - 2024-06-05 15:25:32 --> mysqli_sql_exception: Table 'tubes_webpro.db_ruangan' doesn't exist in C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\TubesWebPro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TubesWebPro\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TubesWebPro\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\TubesWebPro\app\Controllers\Index.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\TubesWebPro\system\CodeIgniter.php(932): App\Controllers\Index->index()
+#8 C:\xampp\htdocs\TubesWebPro\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#9 C:\xampp\htdocs\TubesWebPro\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(Object(CodeIgniter\Router\RouteCollection), Object(Config\Cache), true)
+#10 C:\xampp\htdocs\TubesWebPro\system\Test\FeatureTestCase.php(188): CodeIgniter\CodeIgniter->run(Object(CodeIgniter\Router\RouteCollection), true)
+#11 C:\xampp\htdocs\TubesWebPro\tests\view\RegisterTest.php(9): CodeIgniter\Test\FeatureTestCase->call('GET', 'register')
+#12 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1617): RegisterTest->testRegisterPage()
+#13 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1223): PHPUnit\Framework\TestCase->runTest()
+#14 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#15 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(RegisterTest))
+#16 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#17 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#18 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#19 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#20 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#21 C:\xampp\htdocs\TubesWebPro\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#22 {main}
+ERROR - 2024-06-05 15:29:46 --> mysqli_sql_exception: Table 'tubes_webpro.db_ruangan' doesn't exist in C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\TubesWebPro\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\TubesWebPro\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\TubesWebPro\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TubesWebPro\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TubesWebPro\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\TubesWebPro\app\Controllers\Index.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\TubesWebPro\system\CodeIgniter.php(932): App\Controllers\Index->index()
+#8 C:\xampp\htdocs\TubesWebPro\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#9 C:\xampp\htdocs\TubesWebPro\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(Object(CodeIgniter\Router\RouteCollection), Object(Config\Cache), true)
+#10 C:\xampp\htdocs\TubesWebPro\system\Test\FeatureTestCase.php(188): CodeIgniter\CodeIgniter->run(Object(CodeIgniter\Router\RouteCollection), true)
+#11 C:\xampp\htdocs\TubesWebPro\tests\view\RegisterTest.php(9): CodeIgniter\Test\FeatureTestCase->call('GET', 'register')
+#12 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1617): RegisterTest->testRegisterPage()
+#13 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(1223): PHPUnit\Framework\TestCase->runTest()
+#14 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestResult.php(729): PHPUnit\Framework\TestCase->runBare()
+#15 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestCase.php(973): PHPUnit\Framework\TestResult->run(Object(RegisterTest))
+#16 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\Framework\TestSuite.php(685): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#17 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#18 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(146): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#19 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\src\TextUI\Command.php(99): PHPUnit\TextUI\Command->run(Array, true)
+#20 C:\xampp\htdocs\TubesWebPro\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#21 C:\xampp\htdocs\TubesWebPro\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#22 {main}
+INFO - 2024-06-05 22:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 15:27:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 15:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 22:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

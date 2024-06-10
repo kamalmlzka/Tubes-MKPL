@@ -1,0 +1,23 @@
+INFO - 2024-05-16 21:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 14:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-16 14:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-16 21:52:18 --> Undefined variable $detail_Ruangan
+in APPPATH\Controllers\AdminControllers\Dashboard.php on line 235.
+ 1 APPPATH\Controllers\AdminControllers\Dashboard.php(235): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $detail_Ruangan', 'C:\\xampp\\htdocs\\TubesWebPro\\app\\Controllers\\AdminControllers\\Dashboard.php', 235)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminControllers\Dashboard->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TubesWebPro\\public\\index.php')
+CRITICAL - 2024-05-16 21:55:52 --> Undefined variable $ruang_terpakai
+in APPPATH\Views\adminPages\dashboard.php on line 111.
+ 1 APPPATH\Views\adminPages\dashboard.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ruang_terpakai', 'C:\\xampp\\htdocs\\TubesWebPro\\app\\Views\\adminPages\\dashboard.php', 111)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\TubesWebPro\\app\\Views\\adminPages\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('adminPages/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminControllers\Dashboard.php(241): view('adminPages/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminControllers\Dashboard->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TubesWebPro\\public\\index.php')

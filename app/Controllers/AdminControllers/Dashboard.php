@@ -126,7 +126,7 @@ class Dashboard extends BaseController
                                     'ruangan_foto' => $data_Ruangan['foto_kelas'],
                                     'jadwal_kelas' => $jadwal_Ruangan['mk_17_18'],
                                 ];
-                            } elseif (date('H:i') >= "18:30" && date('H:i') <= "19:30" && $jadwal_Ruangan['no_kelas'] == $data_Ruangan['id']) {
+                            } elseif (date('H:i') >= "18:30" && date('H:i') <= "23:30" && $jadwal_Ruangan['no_kelas'] == $data_Ruangan['id']) {
                                 $detail_Ruangan[] = [
                                     'ruangan_id' => $data_Ruangan['id'],
                                     'ruangan_no_ruangan' => $data_Ruangan['no_kelas'],
