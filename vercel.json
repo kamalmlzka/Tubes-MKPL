@@ -1,6 +1,6 @@
 {
   "builds": [
-      { "src": "/api/index.php", "use": "vercel-php@0.3.6" },
+      { "src": "/app/Views/index.php", "use": "vercel-php@0.3.6" },
       { "src": "/public/**", "use": "@vercel/static" }
   ],
   "rewrites": [
@@ -10,7 +10,7 @@
       },
       {
           "source": "/(.*)",
-          "destination": "/api/index.php"
+          "destination": "/app/Views/index.php"
       }
   ]
 }
