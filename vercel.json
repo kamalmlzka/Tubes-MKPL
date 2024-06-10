@@ -1,16 +1,22 @@
 {
-  "builds": [
-      { "src": "/app/Views/index.php", "use": "vercel-php@0.3.6" },
-      { "src": "/public/**", "use": "@vercel/static" }
-  ],
-  "rewrites": [
+    "functions": {
+      "api/*.php": {
+        "runtime": "vercel-php@0.3.6"
+      }
+    },
+    "builds": [
+      { "src": "app/Views/index.php", "use": "vercel-php@0.3.6" },
+      { "src": "public/**", "use": "@vercel/static" }
+    ],
+    "rewrites": [
       {
-          "source": "/(css|js|images)/(.*)",
-          "destination": "public/$1/$2"
+        "source": "/(css|js|images|assets)/(.*)",
+        "destination": "/public/$1/$2"
       },
       {
-          "source": "/(.*)",
-          "destination": "/app/Views/index.php"
+        "source": "/(.*)",
+        "destination": "/app/Views/index.php"
       }
-  ]
-}
+    ]
+  }
+  
