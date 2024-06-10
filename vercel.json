@@ -1,17 +1,11 @@
 {
     "builds": [
-      { "src": "app/Views/index.php", "use": "vercel-php@0.3.6" },
+      { "src": "api/*.php", "use": "@vercel/php@0.5.1" },
       { "src": "public/**", "use": "@vercel/static" }
     ],
-    "rewrites": [
-      {
-        "source": "/(css|js|images|assets)/(.*)",
-        "destination": "/public/$1/$2"
-      },
-      {
-        "source": "/(.*)",
-        "destination": "/app/Views/index.php"
-      }
+    "routes": [
+      { "src": "/(css|js|images|assets)/(.*)", "dest": "/public/$1/$2" },
+      { "src": "/(.*)", "dest": "/api/index.php" }
     ]
   }
   
