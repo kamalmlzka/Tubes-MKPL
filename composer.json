@@ -58,7 +58,12 @@
     "scripts": {
         "test": "phpunit",
         "post-install-cmd": [
-          "php spark migrate"
+            "php spark migrate",
+            "php spark db:seed"
+        ],
+        "post-update-cmd": [
+            "php spark migrate",
+            "php spark db:seed"
         ]
     },
     "support": {
