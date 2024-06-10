@@ -57,7 +57,9 @@
     },
     "scripts": {
         "test": "phpunit"
-        "post-install-cmd": "php spark migrate"
+        "post-install-cmd": [
+          "php spark migrate"
+        ]
     },
     "support": {
         "forum": "https://forum.codeigniter.com/",
