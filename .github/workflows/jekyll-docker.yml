@@ -1,0 +1,25 @@
+name: Jekyll site CI
+
+on:
+  push:
+    branches: [ "testing_rheina" ]
+  pull_request:
+    branches: [ "testing_rheina" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the site in the jekyll/builder container
+        run: |
+          docker run \
+          -v ${{ github.workspace }}:/srv/jekyll \-v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+          jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+          
+      - name: Test the site with html-proofer
+        run: |
+          docker run \
+          -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+          jekyll/builder:latest /bin/bash -c "gem install html-proofer && htmlproofer /srv/jekyll/_site --only-4xx"
