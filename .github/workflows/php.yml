@@ -64,12 +64,27 @@ jobs:
       run: ./vendor/bin/phpunit tests/database/ExampleDatabaseTest.php
 
     - name: Run PHPUnit for ExampleSessionTest
+      env:
+        DB_HOST: 127.0.0.1
+        DB_DATABASE: tubes_webpro
+        DB_USERNAME: ''
+        DB_PASSWORD: ''
       run: ./vendor/bin/phpunit tests/session/ExampleSessionTest.php
 
     - name: Run PHPUnit for HealthTest
+      env:
+        DB_HOST: 127.0.0.1
+        DB_DATABASE: tubes_webpro
+        DB_USERNAME: ''
+        DB_PASSWORD: ''
       run: ./vendor/bin/phpunit tests/unit/HealthTest.php
 
     - name: Run PHPUnit for Login
+      env:
+        DB_HOST: 127.0.0.1
+        DB_DATABASE: tubes_webpro
+        DB_USERNAME: ''
+        DB_PASSWORD: ''
       run: ./vendor/bin/phpunit tests/view/LoginTest.php
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
