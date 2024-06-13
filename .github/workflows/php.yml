@@ -1,4 +1,4 @@
-name: PHP Composer
+name: PHPUnit
 
 on:
   push:
@@ -21,7 +21,8 @@ jobs:
       uses: shivammathur/setup-php@v2
       with:
         php-version: '8.2'
-    
+        extensions: mbstring, intl, dom, pdo_mysql
+        
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
 
@@ -37,6 +38,17 @@ jobs:
     - name: Install dependencies
       run: composer install
 
+    - name: Run PHPUnit for ExampleDatabaseTest
+      run: ./vendor/bin/phpunit tests/database/ExampleDatabaseTest.php
+
+    - name: Run PHPUnit for ExampleSessionTest
+      run: ./vendor/bin/phpunit tests/session/ExampleSessionTest.php
+
+    - name: Run PHPUnit for HealthTest
+      run: ./vendor/bin/phpunit tests/unit/HealthTest.php
+
+    - name: Run PHPUnit for Login
+      run: ./vendor/bin/phpunit tests/view/LoginTest.php
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
