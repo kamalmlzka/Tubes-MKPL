@@ -11,9 +11,23 @@ permissions:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
+    services:
+      mysql:
+        image: mysql:5.7
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: tubes_webpro
+          MYSQL_USER: root
+          MYSQL_PASSWORD: root
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping --silent"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=3
+          
     steps:
     - uses: actions/checkout@v4
     
@@ -38,7 +52,15 @@ jobs:
     - name: Install dependencies
       run: composer install
 
+    - name: Wait for MySQL to be ready
+      run: sudo apt-get install -y mysql-client && until mysqladmin ping -h"127.0.0.1" --silent; do sleep 1; done
+
     - name: Run PHPUnit for ExampleDatabaseTest
+      env:
+        DB_HOST: 127.0.0.1
+        DB_DATABASE: tubes_webpro
+        DB_USERNAME: root
+        DB_PASSWORD: root
       run: ./vendor/bin/phpunit tests/database/ExampleDatabaseTest.php
 
     - name: Run PHPUnit for ExampleSessionTest
