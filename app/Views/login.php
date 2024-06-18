@@ -76,7 +76,7 @@
       var nim = document.getElementById("nim").value;
       var password = document.getElementById("password").value;
 
-      if (nim !== "" && password !== "") {
+      if (nim !== "" || password !== "") {
         return true;
       } else {
         alert("Pastikan Nim Dan Password Sudah Terisi.")
